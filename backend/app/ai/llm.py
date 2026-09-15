@@ -1,0 +1,10 @@
+from langchain_groq import ChatGroq
+
+from ..config import settings
+
+
+llm = ChatGroq(
+    model="openai/gpt-oss-20b",
+    temperature=0,
+    api_key=settings.GROQ_API_KEY,
+)
